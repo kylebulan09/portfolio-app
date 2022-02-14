@@ -1,0 +1,322 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family: 'Roboto', sans-serif;
+ scroll-behavior: smooth;
+}
+header{
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ padding: 10px 100px;
+ z-index: 10000;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ transition: 0.5s;
+ background-color: rgba(0, 0, 0, .7);
+}
+header.sticky{
+ background: #fff;
+ padding: 10px 100px;
+ box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo{
+ color: #fff;
+ font-weight: 700;
+ font-size: 2em;
+ text-decoration: none;
+}
+header .sticky .logo{
+ color: #111;
+}
+header .logo span{
+ color: #ff0157;
+}
+header .navigation{
+ position: relative;
+ display: flex;
+ margin-right: 10%;
+}
+header .navigation li{
+ list-style: none;
+ margin-left: 30px;
+}
+header .navigation li a{
+ text-decoration: none;
+ color: #fff;
+ font-weight: 300;
+}
+header.sticky .navigation li a{
+ color: #111;
+}
+header .navigation li a:hover{
+ color: #d92626;
+}
+.myClass{
+	font-size: 3rem;
+	width: 270px;
+	height: 70px;
+}
+
+/* Index section starts here! */
+.index-container{
+position: relative;
+justify-content: center;
+text-align:center;
+align-items: center;
+font-size: 1.7em;
+top: 80px;
+}
+.index-container a{
+	text-decoration: none;
+}
+.table-project{
+	width: 100%;
+	padding: 50px;
+	text-align: left;
+	font-weight: 900;
+}
+.table-project th, .table-project tr, .table-project td{
+	height: 50px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px;
+}
+.button{
+	cursor:pointer;
+	display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-create{
+	color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-show{
+	color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.btn-edit{
+	color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+.btn-delete{
+	color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+/* Index section ends here! */
+/* Create section starts here!*/
+.create-container{
+	position: relative;
+	text-align:center;
+	align-items: center;
+	font-size: 1.7em;
+	top: 80px;
+}
+.create-container a{
+	text-decoration: none;
+}
+#create-form input[type=text],  #create-form textarea{
+	height:30px;
+	font-size:1rem;
+	background-color: #f8f8f8;
+	font-weight: bold;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+}
+#create-form textarea{
+	width: 350px;
+	height: 50px;
+}
+.bottom{
+	margin-top: 5%;
+}
+/* Create section ends here!*/
+/* Edit section start here!*/
+.edit-container{
+	position: relative;
+	text-align:center;
+	align-items: center;
+	font-size: 1.7em;
+	top: 80px;
+}
+.edit-container a{
+	text-decoration: none;
+}
+#edit-form input[type=text],  #edit-form textarea{
+	height:30px;
+	font-size:1rem;
+	background-color: #f8f8f8;
+	font-weight: bold;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+}
+#edit-form textarea{
+	width: 350px;
+}
+/* Edit section ends here!*/
+/* Show section starts here!*/
+.show-container{
+	position: relative;
+	text-align:center;
+	align-items: center;
+	font-size: 1.7em;
+	top: 80px;
+}
+.show-container a{
+	text-decoration: none;
+}
+/* Show section ends here!*/
+.home{
+ position: relative;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background: url(images/bg4.jfif);
+ background-size: cover;
+}
+.home .container{
+ max-width: 900px;
+ text-align: center;
+ font-size: 3em;
+ color: #fff;
+}
+.about{
+	background-color: #f2f2f2;
+}
+.row{
+ position: relative;
+ width: 100%;
+ display:flex;
+ justify-content: space-between;
+ padding: 20px;
+}
+.col h2{
+	text-align: center;
+}
+.row .col{
+ position: relative;
+ width: 70%;
+}
+.skills{
+	padding:100px;
+}
+.skills .myDiv .row .col{
+position: relative;
+width: 48%;
+padding: 50px;
+}
+.skills .myDiv .row .col .soft{
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+.skills .myDiv .row .col .line{
+margin-bottom: 15px;
+}
+.skills .myDiv .row .col .data{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.skills .myDiv .row .col span{
+font-weight: 500px;
+font-size: 18px;
+}
+.skills .myDiv .row .col .way{
+height: 5px;
+width: 100%;
+background: lightgray;
+position: relative;
+}
+.skills .myDiv .row .col .way::before{
+	content: "";
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: crimson;
+}
+.skills .myDiv .row .col .ht::before{
+width: 70%;
+}
+.skills .myDiv .row .col .cs::before{
+width: 40%;
+}
+.skills .myDiv .row .col .js::before{
+width: 30%;
+}
+.skills .myDiv .row .col .ph::before{
+width: 20%;
+}
+.skills .myDiv .row .col .py::before{
+width: 40%;
+}
+.contact{
+ background: url(/static/images/bg3.jfif);
+ background-size: cover;
+ text-align: center;
+}
+.contactForm{
+ padding: 75px 50px;
+ background: #fff;
+ box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+ max-width: 700px;
+ margin-top: 50px;
+ margin-left: 32%;
+}
+.contactForm .inputBox{
+ position: relative;
+ width: 100%;
+ margin-bottom: 20px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+ width: 100%;
+ border: 1px solid #555;
+ padding: 10px;
+ color: #111;
+ outline: none;
+ font-size: 16px;
+ font-weight: 300;
+ resize: none;
+}
+.contactForm .inputBox input[type="submit"]{
+ font-size: 1em;
+ color: black;
+ background: #99ffcc;
+ text-transform: uppercase;
+ text-decoration: none;
+ letter-spacing: 2px;
+ transition: 0.5s;
+ max-width: 100px;
+ font-weight: 500;
+ border: none;
+ cursor: pointer;
+}
+.contactForm .inputBox input[type="submit"]:hover{
+	background-color: #00cc66;
+}
